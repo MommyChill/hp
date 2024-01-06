@@ -1,4 +1,10 @@
-
+@media (min-width: 768px) {
+    body {
+        width: 1000px;
+        margin: 0 auto; /* Căn chỉnh nội dung ra giữa màn hình */
+        padding: 0; /* Không có padding */
+        box-sizing: border-box; /* Đảm bảo rằng padding và border không làm tăng kích thước của box */
+    }
 /* Slide */
 .nav-link:hover {
     border-bottom: 2px solid blue; /* Thay đổi màu đường viền thành màu xanh khi hover */
@@ -156,3 +162,4 @@
   .footer-section .email-subscription input[type="email"] {
     margin-right: 5px;
   }
+}
