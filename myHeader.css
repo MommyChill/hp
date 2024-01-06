@@ -1,0 +1,158 @@
+
+/* Slide */
+.nav-link:hover {
+    border-bottom: 2px solid blue; /* Thay đổi màu đường viền thành màu xanh khi hover */
+}
+
+.nav-link {
+    transition: background-color 0.3s, color 0.3s; /* Chuyển đổi màu nền và màu chữ trong 0.3 giây */
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Đặt chiều cao tối đa là 200px */
+
+}
+
+
+/*Section Body */
+.image-content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-content-wrapper .img-fluid {
+    object-fit: cover; /* Điều này sẽ đảm bảo ảnh phủ đầy khung mà không bị méo */
+    border-radius: 8px; /* Bạn đã có thuộc tính này */
+    margin-bottom: 1rem; /* Cách đoạn văn một chút */
+  }
+
+  .image-content-wrapper .text-content {
+    flex: 1; /* Điều này sẽ cho phép nội dung văn bản mở rộng và chiếm hết không gian còn lại */
+  }
+
+  /* Điều chỉnh lại padding và margin nếu cần */
+  .about-section {
+    padding: 30px;
+  }
+
+  .about-section h1,
+  .about-section p,
+  .about-section .btn {
+    margin-bottom: 20px; /* Điều chỉnh khoảng cách giữa các phần tử */
+  }
+
+  /* Linh vuc hoat dong */
+  .activity-section {
+    text-align: center;
+    margin-top: 50px;
+  }
+  .activity-section h2 {
+    margin-bottom: 30px;
+  }
+  .activity-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px; /* or your preferred size */
+    height: 200px; /* or your preferred size */
+    margin: auto;
+  }
+  .activity-image img {
+    width: 100%;
+    height: auto;
+  }
+  .activity-title {
+    margin-top: 15px;
+  }
+
+  /* Ly do chon chung toi */
+  .reasons-section {
+    background: url('path/to/your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: #333; /* Adjust the text color as needed */
+    padding: 40px 0;
+  }
+  .reasons-section h2 {
+    color: #f0ad4e; /* Adjust the heading color as needed */
+    margin-bottom: 20px;
+  }
+  .reasons-section .icon {
+    font-size: 3rem; /* Adjust the icon size as needed */
+    color: #f0ad4e; /* Adjust the icon color as needed */
+  }
+  .reasons-section .number {
+    font-size: 2.5rem; /* Adjust the number size as needed */
+    color: #333; /* Adjust the number color as needed */
+  }
+  .reasons-section .description {
+    color: #666; /* Adjust the description text color as needed */
+  }
+
+  /* Du an tieu bieu */
+  .project-showcase {
+    padding: 40px 0;
+  }
+  .project-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  .project-grid .card {
+    border: none;
+  }
+  .project-grid img {
+    border-radius: 10px; /* Adjust the border radius to match your design */
+  }
+  .caption {
+    margin-top: 10px;
+  }
+
+  /* khach hang tieu bieu */
+  .partners-section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .partners-title {
+    font-size: 1.5rem;
+    color: red; /* Adjust the color as per your design */
+    margin-bottom: 20px;
+  }
+  .partner-logo {
+    padding: 10px;
+    background: #fff; /* Or any other color as per your design */
+    border: 1px solid #ddd; /* Or any other color as per your design */
+    border-radius: 10px; /* Or as per your design */
+    margin: 10px;
+    display: inline-block;
+    width: 150px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+  }
+  .partner-logo img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* Footer */
+  .footer-section {
+    background-color: #fff; /* White background */
+    color: #333; /* Adjust the text color as needed */
+    padding: 20px 0; /* Add some padding */
+  }
+  .footer-section h5 {
+    color: #555; /* Adjust heading color as needed */
+    margin-bottom: 15px;
+  }
+  .footer-section a {
+    color: #007bff; /* Bootstrap primary color for links */
+  }
+  .footer-section .social-widget {
+    max-width: 350px;
+  }
+  .footer-section .social-widget img {
+    max-width: 100%;
+    height: auto;
+  }
+  .footer-section .email-subscription input[type="email"] {
+    margin-right: 5px;
+  }

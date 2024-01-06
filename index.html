@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="myHeader.css">
+</head>
+
+<body>
+    <section class="myHeader">
+        <div id="navbar-placeholder"></div>
+    </section>
+    <!-- Section slide -->
+    <section class="slide">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <!-- Anh slide-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="picture/building/pic1.jpg" alt="Image 1" class="d-block w-100">
+                    <!-- Thay thế image1.jpg với đường dẫn ảnh của bạn -->
+                </div>
+                <div class="carousel-item active">
+                    <img src="picture/building/pic2.jpg" alt="Image 1" class="d-block w-100">
+                    <!-- Thay thế image1.jpg với đường dẫn ảnh của bạn -->
+                </div>
+                <div class="carousel-item">
+                    <img src="picture/building/pic3.jpg" alt="Image 3" class="d-block w-100">
+                    <!-- Thay thế image3.jpg với đường dẫn ảnh của bạn -->
+                </div>
+                <div class="carousel-item">
+                    <img src="picture/building/pic4.jpg" alt="Image 3" class="d-block w-100">
+                    <!-- Thay thế image3.jpg với đường dẫn ảnh của bạn -->
+                </div>
+                <div class="carousel-item">
+                    <img src="picture/building/pic5.jpg" alt="Image 3" class="d-block w-100">
+                    <!-- Thay thế image3.jpg với đường dẫn ảnh của bạn -->
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Section body -->
+    <section class="body">
+        <div class="container my-5">
+            <div class="row align-items-stretch">
+                <!-- 'align-items-stretch' sẽ đảm bảo các cột có chiều cao bằng nhau -->
+                <div class="col-lg-6 mb-3 mb-lg-0">
+                    <div class="image-content-wrapper">
+                        <img src="picture/random/pic1.jpg" alt="Building Image" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-content">
+                        <h1 class="text-primary">GIỚI THIỆU HÙNG PHÁT</h1>
+                        <p class="text-secondary">
+                            Công ty Hùng Phát, tiên phong trong lĩnh vực lắp đặt và triển khai hệ thống điều hòa không
+                            khí cho các công trình lớn, chúng tôi tự hào là nhà thầu uy tín, chuyên nghiệp được thành
+                            lập dựa trên nền tảng vững chắc từ niềm đam mê và kỹ thuật tiên tiến. Kể từ ngày thành lập,
+                            Hùng Phát đã không ngừng phát triển, mở rộng quy mô và nâng cao chất lượng dịch vụ, nhằm
+                            mang lại không gian sống và làm việc lý tưởng, thoáng đãng và tiết kiệm năng lượng cho khách
+                            hàng. <br><br> Với đội ngũ kỹ sư chuyên môn cao và tâm huyết với nghề, chúng tôi cam kết
+                            thực hiện mỗi dự án với chất lượng tốt nhất, đáp ứng nhu cầu của khách hàng một cách nhanh
+                            chóng và hiệu quả. Hùng Phát không chỉ là nhà cung cấp giải pháp điều hòa không khí hàng
+                            đầu, mà còn là đối tác đáng tin cậy trong việc tạo dựng môi trường sống "mát mẻ mỗi ngày"
+                            cho mọi công trình.
+                            <!-- Nội dung giới thiệu của bạn -->
+                        </p>
+                        <a href="your-link.html" class="btn btn-primary">TÌM HIỂU THÊM</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section linh vuc hoat dong -->
+    <section>
+        <div class="activity-section">
+            <h2>LĨNH VỰC HOẠT ĐỘNG</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="activity-image">
+                        <img src="picture/building/pic1.jpg" alt="Đầu tư kinh doanh bất động sản">
+                    </div>
+                    <div class="activity-title">ĐẦU TƯ KINH DOANH BẤT ĐỘNG SẢN</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="activity-image">
+                        <img src="picture/building/pic1.jpg" alt="Thi công xây lắp">
+                    </div>
+                    <div class="activity-title">THI CÔNG XÂY LẮP</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="activity-image">
+                        <img src="picture/building/pic1.jpg" alt="Sản xuất công nghiệp và vật liệu xây dựng">
+                    </div>
+                    <div class="activity-title">SẢN XUẤT CÔNG NGHIỆP VÀ VẬT LIỆU XÂY DỰNG</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="activity-image">
+                        <img src="picture/building/pic1.jpg" alt="Tư vấn đầu tư xây dựng">
+                    </div>
+                    <div class="activity-title">TƯ VẤN ĐẦU TƯ XÂY DỰNG</div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="activity-image">
+                        <img src="picture/building/pic1.jpg" alt="Thương mại và dịch vụ">
+                    </div>
+                    <div class="activity-title">THƯƠNG MẠI VÀ DỊCH VỤ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section ly do chon chung toi -->
+    <section class="reasons-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="mb-4">LÝ DO KHÁCH HÀNG CHỌN HÙNG PHÁT</h2>
+                    <p class="lead">Công ty Hùng Phát, chuyên gia hàng đầu trong việc lắp đặt hệ thống điều hòa không
+                        khí cho các công trình lớn. Chúng tôi cung cấp giải pháp hoàn hảo, từ thiết kế đến thi công,
+                        giúp khách hàng của mình tối ưu hóa chi phí và thời gian, trong khi vẫn đảm bảo chất lượng và
+                        dịch vụ khách hàng tận tâm.</p>
+                    <p class="mb-5">Với kinh nghiệm và đội ngũ kỹ sư chuyên nghiệp, Hùng Phát tự hào mang đến sự mát mẻ,
+                        thoải mái cho hàng loạt các dự án trên khắp cả nước, góp phần nâng cao hiệu quả công việc và
+                        đóng góp vào giá trị bền vững cho môi trường sống và làm việc.</p>
+                </div>
+                <!-- Add icon classes from a library like Font Awesome if needed -->
+                <div class="col-md-3">
+                    <div class="icon">🕒</div>
+                    <div class="number">07</div>
+                    <div class="description">năm kinh nghiệm</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon">📍</div>
+                    <div class="number">03</div>
+                    <div class="description">văn phòng</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon">👥</div>
+                    <div class="number">2165</div>
+                    <div class="description">khách hàng</div>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon">🏆</div>
+                    <div class="number">2638</div>
+                    <div class="description">dự án hoàn thành</div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section>
+        <h2 class="project-title">CÔNG TRÌNH TIÊU BIỂU</h2>
+        <!-- Categories or filters can go here -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 project-grid">
+            <!-- Repeat this block for each project -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="picture/building/pic1.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title caption">Project Name</h5>
+                        <!-- Project description if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="picture/building/pic1.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title caption">Project Name</h5>
+                        <!-- Project description if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="picture/building/pic1.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title caption">Project Name</h5>
+                        <!-- Project description if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="picture/building/pic1.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title caption">Project Name</h5>
+                        <!-- Project description if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="picture/building/pic1.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title caption">Project Name</h5>
+                        <!-- Project description if needed -->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="picture/building/pic1.jpg" class="card-img-top" alt="Project Name">
+                    <div class="card-body">
+                        <h5 class="card-title caption">Project Name</h5>
+                        <!-- Project description if needed -->
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat ends -->
+            <!-- More projects... -->
+        </div>
+    </section>
+
+    <!-- Sction doi tac tieu bieu -->
+    <section class="container partners-section">
+        <h2 class="partners-title">ĐỐI TÁC TIÊU BIỂU</h2>
+        <div class="row justify-content-center">
+            <!-- Repeat this block for each partner -->
+            <div class="col-auto">
+                <div class="partner-logo">
+                    <img src="picture/building/pic1.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="partner-logo">
+                    <img src="picture/building/pic1.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="partner-logo">
+                    <img src="picture/building/pic1.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="partner-logo">
+                    <img src="picture/building/pic1.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="partner-logo">
+                    <img src="picture/building/pic1.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="partner-logo">
+                    <img src="picture/building/pic1.jpg" alt="Partner 1">
+                </div>
+            </div>
+            <!-- Repeat ends -->
+            <!-- More partners... -->
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>THÔNG TIN LIÊN HỆ</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Công Ty TNHH Hùng Phát</strong></li>
+                        <li>Zalo: 0392 558 451</li>
+                        <li>Email: <a href="mailto:info@hungphat.vn" target="_blank">info@hungphat.vn</a></li>
+                        <li>Website: <a href="https://hungphat.vn" target="_blank">hungphat.vn</a></li>
+                        <li><strong>Văn Phòng Hà Nội</strong></li>
+                        <li>ĐG 10-32, Khu đô thị mới Kỳ Đồng, P. Kỳ Đồng, Q. Hà Đông, Hà Nội</li>
+                        <li>Hotline: 0346.111.668</li>
+                        <li>Email: <a href="mailto:hanoi@hungphat.vn" target="_blank">hanoi@hungphat.vn</a></li>
+                        <li><strong>Văn Phòng TP. HCM</strong></li>
+                        <li>Tầng 3, Số 115, Đường Vạn Kiếp, P. Tân Quý, Q. Tân Phú, TP. HCM</li>
+                        <li>Hotline: 0773.111.668</li>
+                        <li>Email: <a href="mailto:hcm@hungphat.vn" target="_blank">hcm@hungphat.vn</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>DANH MỤC DỊCH VỤ</h5>
+                    <ul class="list-unstyled">
+                        <li>Lắp đặt hệ thống điều hòa không khí</li>
+                        <li>Lắp đặt và bảo trì ống gió</li>
+                        <li>Hệ thống PCCC (Phòng cháy chữa cháy)</li>
+                        <li>Giải pháp điều hòa cho công trình công nghiệp</li>
+                        <li>Thiết kế và thi công hệ thống thông gió</li>
+                        <li>Bảo dưỡng và sửa chữa hệ thống HVAC</li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center email-subscription">
+                    <form>
+                        <input type="email" placeholder="Email của bạn..." aria-label="Email của bạn">
+                        <button type="submit" class="btn btn-primary">Gửi</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Hy5382Lf5B3O5WhFU5w5xE5s/uGd5EC/6f5F5j5mF5b5f5Eq5L5O5F5p5E5t5Lv5o5..."
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+    // Hàm này sẽ được gọi khi trang được tải xong
+    window.onload = function () {
+        // Tạo một yêu cầu HTTP để lấy nội dung của navbar
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'component/myHeader.html', true);
+        xhr.onreadystatechange = function () {
+            if (this.readyState !== 4) return;
+            if (this.status !== 200) return; // hoặc xử lý lỗi
+
+            // Chèn nội dung navbar vào div có id 'navbar-placeholder'
+            document.getElementById('navbar-placeholder').innerHTML = this.responseText;
+        };
+        xhr.send();
+    }
+
+</script>
