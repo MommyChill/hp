@@ -1,3 +1,4 @@
+/* Phien ban deskop */
 @media (min-width: 768px) {
     body {
         width: 1000px;
@@ -23,6 +24,10 @@
 
 
 /*Section Body */
+.btn-custom {
+    background-color: #621416;
+    /* Các quy tắc CSS khác nếu cần */
+}
 .image-content-wrapper {
     display: flex;
     flex-direction: column;
@@ -59,14 +64,13 @@
   }
   .activity-image {
     border-radius: 50%;
-    overflow: hidden;
     width: 200px; /* or your preferred size */
     height: 200px; /* or your preferred size */
     margin: auto;
   }
   .activity-image img {
     width: 100%;
-    height: auto;
+    height: 170px;
   }
   .activity-title {
     margin-top: 15px;
@@ -113,6 +117,11 @@
   .caption {
     margin-top: 10px;
   }
+  .card-img-top {
+    object-fit: cover; /* Cắt ảnh để vừa với kích thước của khung hình */
+    height: 200px; /* Đặt chiều cao mong muốn cho ảnh */
+    width: 100%; /* Chiều rộng 100% của khung hình */
+}
 
   /* khach hang tieu bieu */
   .partners-section {
