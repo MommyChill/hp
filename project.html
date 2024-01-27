@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Danh sách dự án</title>
+  <style>
+    .table-responsive {
+      margin: 20px 0;
+    }
+
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, .05);
+    }
+
+    .table-hover tbody tr:hover {
+      color: #212529;
+      background-color: rgba(0, 0, 0, .075);
+    }
+
+    .table thead th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .table-bordered {
+      border: 1px solid #dee2e6;
+    }
+
+    .table td,
+    .table th {
+      padding: .75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">TT</th>
+            <th scope="col">Tên hợp đồng</th>
+            <th scope="col">Tên Chủ dự án</th>
+            <th scope="col">Giá trị hợp đồng</th>
+            <th scope="col">Nội dung cung cấp chủ yếu</th>
+            <th scope="col">Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows go here -->
+          <tr>
+            <th scope="row">1</th>
+            <td>Hợp đồng cung cấp thiết bị và thi công xây lắp số 156</td>
+            <td>Công ty cổ phần địa ốc xanh Sài Gòn Thuận Phước</td>
+            <td>12.745.599.000 VND</td>
+            <td>Cung cấp | thiết bị và thi công lắp đặt. Hạng mục: Hệ thống điện,nước,chống sét và | điện nhẹ, âm thanh
+            </td>
+            <td>Chung cư nhà ở Xã hội khu công nghiệp Khánh Hòa - Khối nhà E3
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Hợp đồng Kinh tế số 1504/2020/HĐ/XN10-HP</td>
+            <td>Trường đại học cần thơ</td>
+            <td>15.950.303.000 VND</td>
+            <td>Cung cấp thiết bị điều hòa không khí và quạt thông gió
+            </td>
+            <td>Dụ án: nâng cấp trường đại học Cần Thơ
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Hợp đồng Kinh tế số 0803/2020/HDKT/ XN4-HP</td>
+            <td>Học viện chính sách và phát triển</td>
+            <td>9.872.405.772 VND</td>
+            <td>Thi công lắp đặt hệ thống điện hạ tầng kỹ thuật
+            </td>
+            <td>Dụ án: Đầu tư xây dựng học viện chính sách phát triển
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Hợp đồng thi công xây dựng công trình số 1812/2019/HĐXD/LICOGI13FC-Hùng Phát</td>
+            <td>Công ty cổ phần BQL REAL</td>
+            <td>6.625.996.000 VND</td>
+            <td>Thi công lắp đặt hệ thống điện hạ tầng kỹ thuật
+            </td>
+            <td>Dụ án: Đầu tư xây dựng học viện chính sách phát triển
+            </td>
+          </tr>
+          <!-- Repeat for other rows -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
