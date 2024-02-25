@@ -4,6 +4,7 @@
   <!-- Link Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <title>Danh sách dự án</title>
+  <link rel="stylesheet" href="myHeader.css">
   <style>
     .table-responsive {
       margin: 20px 0;
@@ -37,6 +38,10 @@
 </head>
 
 <body>
+  <section class="myHeader">
+    <div id="navbar-placeholder"></div>
+  </section>
+
 
   <div class="container">
     <div class="table-responsive">
@@ -83,6 +88,7 @@
             <td>Dụ án: Đầu tư xây dựng học viện chính sách phát triển
             </td>
           </tr>
+          <!-- Repeat for other rows -->
           <tr>
             <th scope="row">4</th>
             <td>Hợp đồng thi công xây dựng công trình số 1812/2019/HĐXD/LICOGI13FC-Hùng Phát</td>
@@ -94,6 +100,49 @@
             </td>
           </tr>
           <!-- Repeat for other rows -->
+          <tr>
+            <th scope="row">5</th>
+            <td>Hợp đồng thi công xây dựng công trình số 02-12/2018</td>
+            <td>Liên danh công ty CP đầu tư xây dựng CIENCO01</td>
+            <td>8.625.533.000 VND</td>
+            <td>Thi công lắp đặt hệ thống điều hòa không khí và thông gió
+            </td>
+            <td>Dụ án: Xây dựng chung cư C1 Thành Công
+            </td>
+          </tr>
+          <!-- Repeat for other rows -->
+          <tr>
+            <th scope="row">6</th>
+            <td>Hợp đồng thi công lắp đặt số 2805/2019/HĐ/SHB-HP</td>
+            <td>Ngân hàng thương mại cổ phần Sài Gòn-Hà Nội</td>
+            <td>13.500.000.000 VND</td>
+            <td>Thi công lắp đặt hệ thống điều hòa không khí và thông gió
+            </td>
+            <td>Dụ án: Tòa nhà SHB Đà Nẵng
+            </td>
+          </tr>
+          <!-- Repeat for other rows -->
+          <tr>
+            <th scope="row">7</th>
+            <td>Hợp đồng kinh tế số 0312/2018/HĐKT/HT-HP ngày 03/12/2018</td>
+            <td>Công ty cổ phần thương mại và dịch vụ Hà Thành</td>
+            <td>42.000.000.000 VND</td>
+            <td>Thi công hệ thống điều hòa Chiller, thông gió
+            </td>
+            <td>Dụ án: Khách sạn 4* Hà Thành, Quảng Ninh
+            </td>
+          </tr>
+          <!-- Repeat for other rows -->
+          <tr>
+            <th scope="row">8</th>
+            <td>Hợp đồng thầu phụ thi công xây dựng</td>
+            <td>Công ty cổ phần đầu tư bất động sản Đông Đô-bộ quốc phòng</td>
+            <td>32.295.886.000 VND</td>
+            <td>Thi công hệ thống điều hòa không khí và thông gió
+            </td>
+            <td>Dụ án: Cụm công trình nhà ở tại lô đất LA20-KĐT Nam Thăng Long-Hà Nội
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
@@ -107,3 +156,27 @@
 </body>
 
 </html>
+
+<script>
+  //header
+  window.onload = function () {
+    var xhrHeader = new XMLHttpRequest();
+    xhrHeader.open('GET', 'component/myHeader.html', true);
+    xhrHeader.onreadystatechange = function () {
+      if (this.readyState !== 4) return;
+      if (this.status !== 200) return;
+      document.getElementById('navbar-placeholder').innerHTML = this.responseText;
+    };
+    xhrHeader.send();
+
+    //footer
+    var xhrFooter = new XMLHttpRequest();
+    xhrFooter.open('GET', 'component/myFooter.html', true);
+    xhrFooter.onreadystatechange = function () {
+      if (this.readyState !== 4) return;
+      if (this.status !== 200) return;
+      document.getElementById('footer-placeholder').innerHTML = this.responseText;
+    };
+    xhrFooter.send();
+  }
+</script>

@@ -19,7 +19,17 @@
     max-width: 100%;
     height: auto;
     max-height: 400px; /* Đặt chiều cao tối đa là 200px */
+    filter: blur(2px);
+}
 
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff; /* Màu của chữ */
 }
 
 
@@ -171,4 +181,68 @@
   .footer-section .email-subscription input[type="email"] {
     margin-right: 5px;
   }
+
+
+  /* Style for slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%; /* Slide width */
+}
+
+/* Style for the slides */
+.mySlides {
+  width: 100%; /* Adjust the width as necessary */
+  height: auto; /* Adjust the height as necessary */
+}
+
+/* Style for the image */
+.mySlides img {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+/* Style for the text description container */
+.text-description-container {
+  text-align: center; /* Center the text horizontally */
+  padding: 20px;
+  background-color: #f8f8f8; /* Background color for the text container */
+}
+
+/* Style for the header */
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #621416; /* Text color for the header */
+  margin-bottom: 10px; /* Margin between the header and description */
+  text-align: center;
+}
+
+/* Style for the description text */
+.text-description {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Style for the custom dots container */
+.custom-dot-container {
+  text-align: center; /* This will center the custom dots */
+  padding: 10px 0; /* Add some padding above and below the custom dots */
+}
+
+/* Style for the custom dots themselves */
+.custom-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px; /* This gives a little space on the left and right of each custom dot */
+  background-color: #bbb; /* Unselected custom dot color */
+  border-radius: 50%;
+  display: inline-block; /* This allows the custom dots to be affected by text-align center */
+}
+
+/* Style for the active custom dot */
+.custom-dot.active {
+  background-color: #717171; /* Selected custom dot color */
+}
 }
