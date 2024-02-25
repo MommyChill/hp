@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="myHeader.css">
+</head>
+
+<body>
+    <section class="myHeader">
+        <div id="navbar-placeholder"></div>
+    </section>
+    <!-- Section slide -->
+    
+    <!-- Section body -->
+    
+
+    <!-- Section linh vuc hoat dong -->
+    
+    <!-- Section ly do chon chung toi -->
+    
+
+    
+
+    <!-- Sction doi tac tieu bieu -->
+    <section class="custom-slide">
+        <div id="customCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="picture/building/pic2.jpg" alt="Image 1" class="d-block w-100">
+              <!-- Overlay for the text -->
+              <div class="carousel-caption d-flex h-100 align-items-center justify-content-center">
+                <h3>Dịch vụ công ty Hùng Phát</h3>
+              </div>
+            </div>
+            <!-- You can add more .carousel-item here for more slides -->
+          </div>
+        </div>
+      </section>
+
+    <!-- Slide lich su gioi thieu -->
+    <div class="container mt-5">
+        <div class="row mb-4">
+          <div class="col text-center">
+            <h2 style="color: #621416;">Bảo hành</h2>
+            <p>Dịch Vụ Bảo Hành Uy Tín của Công Ty TNHH Hùng Phát
+
+            </p>
+            <p>Công ty TNHH Hùng Phát không chỉ nổi bật trong lĩnh vực xây dựng và lắp đặt thiết bị công nghệ cao mà còn tự hào với dịch vụ bảo hành vượt trội, đảm bảo hoạt động liên tục và hiệu quả của các công trình sau khi hoàn thành. Chúng tôi cung cấp dịch vụ hỗ trợ kỹ thuật vận hành tòa nhà, đảm bảo rằng mọi hệ thống điện và thiết bị luôn trong tình trạng tối ưu.
+
+            </p>
+            <p>Với cam kết chuyển giao công nghệ một cách chính xác theo đúng các điều khoản đã thỏa thuận trong hợp đồng, Hùng Phát đảm bảo khách hàng có thể yên tâm về sự an toàn và hiệu quả của các giải pháp mà chúng tôi cung cấp. Đội ngũ nhân viên kỹ thuật của chúng tôi luôn sẵn sàng tại hiện trường để giải quyết mọi sự cố nhanh chóng, với thời gian phản hồi cấp bách trong vòng 30 phút, nhằm đáp ứng mọi yêu cầu của khách hàng một cách kịp thời và hiệu quả.
+
+            </p>
+            <p>Chúng tôi tự hào với đội ngũ kỹ thuật viên chuyên nghiệp và xe cứu hộ kỹ thuật sẵn sàng phục vụ, đảm bảo rằng mỗi dự án được bảo hành với chuẩn mực dịch vụ hàng đầu. Với hơn 80 cán bộ kỹ thuật chuyên sâu và phương tiện cứu hộ hiện đại, Hùng Phát cam kết phục vụ khách hàng trên khắp ba miền Bắc - Trung - Nam, đảm bảo sự hài lòng và tin cậy tuyệt đối từ phía khách hàng.
+
+            </p>
+          </div>
+        </div>
+        <div  class="row">
+    
+          
+        </div>
+      </div>
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Hy5382Lf5B3O5WhFU5w5xE5s/uGd5EC/6f5F5j5mF5b5f5Eq5L5O5F5p5E5t5Lv5o5..."
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
+
+<script>
+    // This function will be called when the page finishes loading
+    window.onload = function () {
+        // Create an HTTP request to get the content of the header
+        var xhrHeader = new XMLHttpRequest();
+        xhrHeader.open('GET', 'component/myHeader.html', true);
+        xhrHeader.onreadystatechange = function () {
+            if (this.readyState !== 4) return;
+            if (this.status !== 200) return; // or handle error
+
+            // Insert the header content into the div with id 'navbar-placeholder'
+            document.getElementById('navbar-placeholder').innerHTML = this.responseText;
+        };
+        xhrHeader.send();
+
+        // Create an HTTP request to get the content of the footer
+        var xhrFooter = new XMLHttpRequest();
+        xhrFooter.open('GET', 'component/myFooter.html', true);
+        xhrFooter.onreadystatechange = function () {
+            if (this.readyState !== 4) return;
+            if (this.status !== 200) return; // or handle error
+
+            // Insert the footer content into the div with id 'footer-placeholder'
+            document.getElementById('footer-placeholder').innerHTML = this.responseText;
+        };
+        xhrFooter.send();
+    }
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+// Function to show the slide based on index
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+
+  // Hide all slides
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+
+  // Remove the "active" class from all dots
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Show the current slide and add the "active" class to the current dot
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
