@@ -261,4 +261,10 @@
 .custom-dot.active {
   background-color: #717171; /* Selected custom dot color */
 }
+
+
+.dot.active {
+  background-color: #621416; /* Đổi màu nền của dấu chấm được chọn thành đỏ */
+}
+
 }
